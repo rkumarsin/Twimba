@@ -144,7 +144,7 @@ function addTweet() {
     const newTweet = {
         uuid: uuidv4(),
         handle: "@Twimba",
-        profilePic: "twitter.png",
+        profilePic: "overflow.png",
         likes: 0,
         retweets: 0,
         tweetText: tweet,
