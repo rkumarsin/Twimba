@@ -16,11 +16,17 @@ i{
     font-size: 15px;
     cursor: pointer;
 }
-
 .fa-solid{
     color: #999;
 }
+.fa-trash{
 
+    opacity: 0.5;
+}
+.fa-trash:hover{
+    opacity: 1;
+    color: red;
+}
 .liked{
     color: red;
 }
@@ -48,17 +54,54 @@ header{
 
 /* textareas + btn */
 
-textarea{
+.new-tweet{
     border: none;
-    resize: none;
     padding: 10px;
     margin: 0 0 20px 0;
     height: 60px;
     width: 100%;
     font-size: 20px;
     line-height: 30px;
+    resize: none;
 }
-
+.add-reply{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* align-items: flex-start; */
+    margin: 10px 0 10px 40px;
+}
+.reply-details{
+    display: flex;
+    flex-direction: column;
+    /* width: 160px; */
+    /* align-items: center; */
+    
+}
+.add-reply img{
+    border: 1px solid lightgray;
+    border-radius: 50%;
+    width: 30px;
+}
+.reply-input{
+    resize: none;
+    border: 1px solid lightgray;
+    margin: 10px;
+    font-size: 11pt;
+    padding: 5px ;
+    width: 100%;
+}
+.reply-btn{
+    font-size: 11pt;
+    padding: 10px 15px;
+    width: auto;
+    margin: 0;
+    align-self: flex-end;
+    letter-spacing: 1px;
+}
+.reply-btn:hover{
+    box-shadow: 0 0 4px 3px lightgray;
+}
 button{
     background-color: #1DA1F2;
     border: none;
@@ -89,10 +132,14 @@ button{
 .tweet-details{
     display: flex;
     font-size: 13px;
-    justify-content: space-between;
-    width: 160px;
-}
+    /* justify-content: space-between; */
+    gap: 20px;
+    width: 100%;
 
+}
+.trash{
+    margin-left: auto;
+}
 .tweet-detail{
     display: flex;
     gap: 4px;
