@@ -63,7 +63,7 @@ const renderTweet = (tweets) => {
                     </div>
                     <div class="hidden" id="replies-${tweet.uuid}">
                         <div class="add-reply">
-                            <img src="images/scrimbalogo.png" alt="Scrimba logo"/>                                            
+                            <img src="twitter.png" alt="Twitter logo"/>                                            
                             <div class="reply-details">
                                 <textarea class="reply-input" id="reply-for-${tweet.uuid}"></textarea>
                                 <button class="reply-btn" data-reply-for="${tweet.uuid}">Reply</button>
@@ -119,7 +119,7 @@ function performEvent(event) {
         if (reply.value) {
             const newReply = {
                 handle: `@Twimba`,
-                profilePic: `images/scrimbalogo.png`,
+                profilePic: `twitter.png`,
                 tweetText: reply.value
             }
             foundPost.replies.unshift(newReply);
@@ -144,7 +144,7 @@ function addTweet() {
     const newTweet = {
         uuid: uuidv4(),
         handle: "@Twimba",
-        profilePic: "images/scrimbalogo.png",
+        profilePic: "twitter.png",
         likes: 0,
         retweets: 0,
         tweetText: tweet,
